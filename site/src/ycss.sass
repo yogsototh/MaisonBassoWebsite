@@ -1,0 +1,13 @@
+$y-default-width: 960px
+$y-default-border: 0px
+$y-default-padding: 10px
+$y-default-margin: 10px
+
+=yblock($nbcol, $border:  $y-default-border, $padding: $y-default-padding, $margin:  $y-default-margin, $width:   $y-default-width)
+  width: ($width / $nbcol) - 2*$margin - 2*$padding - 2*$border
+  border: $border
+  margin: $margin
+  padding: $padding + $border
+  float: left
+  display: block
+

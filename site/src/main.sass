@@ -1,0 +1,409 @@
+$default-transition-duration: .5s
+@import "compass/css3/transition"
+
+@import compass/css3/border-radius
+@import compass/css3/box-shadow
+@import compass/css3/text-shadow
+@import compass/css3/gradient
+
+@import ycss
+
+$stdWidth: 960px
+$navWidth: 600px
+
+$ycolorb: #EFEFF4
+$ycolorc: #E3E5ED
+$ycolor0: #C9CEDE
+$ycolor1: #B4B8C5 
+$ycolor2: #9CA1AD 
+$ycolor3: #868B96 
+$ycolor4: #60646C 
+$ycolor5: #51555C 
+$ycolor6: #41444A 
+$ycolor7: #303237 
+$ycolor8: #1F2024 
+$ycolor9: #0F1011
+
+// $higlightcolor:  #28C
+$higlightcolor:  $ycolor3 + #025 - #444
+$higlightcolor-shadow:  #058
+$higlightcolor-reflect:  #6AF
+
+$dark_highlight: #025
+$light_highlight: $ycolor3 - #530
+
+$main-background-color: $ycolorb
+
+
+// Background colors
+body
+  color: $ycolor6
+  margin: 0
+  font-family: Futura, Molengo, sans-serif
+  background: $main-background-color
+  hr
+    clear: both
+    color: $ycolor1
+    background: $ycolor1
+    border: none
+    border-bottom: 1px solid $ycolorb
+    width: $navWidth/2
+    margin: 2em auto
+  h1,h2,h3,h4,h5,h6
+    color: $ycolor4
+    font-weight: bold
+    letter-spacing: -0.05em
+    a
+      color: $ycolor2
+      &:visited
+        color: $ycolor2
+      &:hover, &:active
+        color: $higlightcolor
+  a
+    text-decoration: none
+    color: $ycolor4
+    &:visited
+      color: $ycolor4
+    &:hover, &:active
+      color: $higlightcolor
+
+
+// Transition for all elements
+* 
+  +transition
+
+hgroup#maintitle
+  margin: 1em 0 
+  font-size: 2em
+  h1,h2
+    margin: .3em
+    &,a
+      font-weight: normal
+      color: $ycolor9
+      text-shadow: 0 0 2px rgba($ycolorb,.5)
+    a:hover
+      color: $dark_highlight
+  h2
+    font-size: .8em
+  border:
+    top: solid 1px #000
+    bottom: solid 1px #FFF
+  +box-shadow(rgba(#000,.6) 0 0 15px inset)
+  +linear-gradient(color-stops($ycolor4,$ycolor5))
+
+
+hgroup#maintitle
+  +yblock(1,0px, 10px,10px,960px)
+
+footer
+  font-size: .8em
+  clear:both
+
+#container>footer
+  *
+    width: $stdWidth
+    margin: 0 auto
+  a
+    color: $ycolor8
+    &:hover
+      color: $dark_highlight
+  padding: 3em 0
+  color: $ycolor9
+  text-shadow: 0 0 2px rgba($ycolorb,.5)
+  +linear-gradient(color-stops($ycolor4,$ycolor5))
+
+=debug
+  +box-shadow(#FFF 0 0 3px, rgba(#000,0.2) 0 0 3px inset)
+  background: rgba(#EA6,0.08)
+// 
+// *
+//   +debugblock
+
+.clickable
+  cursor: pointer
+
+// large container
+#container
+  width: span(24)
+  margin: 0 auto
+  // +showgrid
+
+a
+  text-decoration: none
+
+h1,h2
+  text-align: center
+
+=innerblock
+  background-color: $ycolorc
+  +box-shadow(#FFF 0 0 3px, rgba(#000,0.2) 0 0 3px inset)
+  +border-radius()
+  & > *
+    margin: 20px
+
+.block
+  +innerblock
+  &:hover
+    background-color: rgba(#000,0.05)
+
+=ybutton
+  font-size: 14px
+  a:hover
+    color: $ycolorb
+    background-color: rgba(#000,.3)
+    +box-shadow(rgba(#000,.3) 0 1px 3px inset,rgba(#FFF,.3) 0 1px 3px inset)  
+  a:active
+    background-color: rgba(#000,.5)
+    text-shadow: 0 0 2px #000
+  a
+    color: $ycolor2
+  a,span
+    padding: .2em
+    +border-radius(2ex)
+    text-align: center
+    width: 100%
+    display: inline-block
+    &:hover
+      color: $ycolorb
+  span
+    color: $ycolorb
+    text-shadow: 0 -1px 0 rgba(#000,.3), 0 1px 0 rgba(#FFF,.3)
+    background-color: rgba(#000,.15)
+    +box-shadow(rgba(#000,.3) 0 1px 3px inset,rgba(#FFF,.3) 0 1px 3px inset)  
+
+=button
+  +text-shadow(rgba(#000,0.5) 0px -1px 0px,rgba(#FFF,0.5) 0px 1px 0px )
+  +border-radius(3px)
+  text-align: center
+  +button-button(left)
+  +button-hover-colors
+  +button-colors($ycolor5, $ycolorc, rgba(#000,.3), rgba(#FFF,.3))
+  +button-hover-colors($higlightcolor + #446, $ycolorc - #111, rgba(#000,.3), rgba(#FFF,.3))
+  +button-active-colors($higlightcolor + #448, $ycolorc - #111, rgba(#FFF,.3), rgba(#000,.3))
+  &:hover
+    +text-shadow(#38C 0 0 3px, rgba(#000,0.5) 0px -1px 0px,rgba(#FFF,0.5) 0px 1px 0px )
+  &:active
+    +text-shadow(#3AF 0 0 4px, rgba(#000,0.5) 0px -1px 0px,rgba(#FFF,0.5) 0px 1px 0px )
+
+
+
+#prelinks
+  width: $stdWidth
+  margin: .5em auto
+  height: 1em
+
+
+#choixlang
+  float: left
+  +ybutton
+
+#choixrss
+  float: right
+  +ybutton
+
+$nbNavItems: 4
+#mainnav
+  width: $navWidth
+  padding: 0
+  margin: 0 auto
+  ul
+    padding: 0
+    list-style-type: none
+    li
+      text-align: center
+      float: left
+      width: ($navWidth - (6*$nbNavItems))/$nbNavItems
+      margin: 0 3px
+      +ybutton
+      *
+        font-size: 1.0em
+
+
+.flush
+  clear: both !important
+
+.clean
+  background: none
+  border: none
+  margin: none
+
+#main
+  width: $stdWidth
+  margin: 0 auto
+
+body.std #main > article, .slideshow
+  padding: 3em
+  margin: 3em 0
+  +innerblock
+
+.slideshow
+  color: $ycolor4
+  font-size: 1.2em
+  h3
+    font-size: 2.0em
+    color: $ycolor2
+    text-shadow: 0 0 3px #FFF
+    margin-bottom: 2em
+
+.center
+  margin: 0 auto
+  text-align: center
+
+.leftimage
+  float: left
+.rightimage
+  float: right
+
+img.left
+  float: left
+  padding: 10px
+  max-width: 10em
+  +innerblock
+  margin: 0 2em
+  background: $ycolorb
+
+ul.article_metadata
+  list-style-type: none
+  text-align: right
+  color: $ycolor1
+  a
+    color: $ycolor2
+    &:hover
+      color: $light_highlight
+
+#tagcloud
+  background: $ycolorb
+  +innerblock
+  padding: 1em
+  width: $navWidth
+  margin: 1em auto
+  a:hover
+    cursor: pointer
+
+#elementblock
+  width: $navWidth
+  margin: 0 auto 4em auto
+  ul.menu
+    background-color: $ycolorb
+    +box-shadow(#FFF 0 0 3px, rgba(#000,0.2) 0 0 3px inset)
+    +border-radius(2.3ex)
+    margin: 0 auto
+    padding: 0
+    list-style-type: none
+    li
+      display: inline-block
+      text-align: center
+      width: ($navWidth / 4)
+      margin: 0 $navWidth/26
+      +ybutton
+
+#related_articles
+  width: $stdWidth
+  margin: 3em auto
+  #previous_articles
+    float: left
+    width: 40%
+  #next_articles
+    float: right
+    text-align: right
+    width: 40%
+
+.date
+  font-size: .8em
+  line-height: 2em
+  float: left
+  color: $ycolor2
+  margin-right: 1em
+
+article article, .archive
+  +innerblock
+  background-color: $ycolorb
+  padding: 1em
+  .content
+    width: $navWidth
+    margin: 0 auto
+
+#hiddenDivs
+  width: $navWidth
+  margin: 1em auto
+  +innerblock
+  background-color: $ycolorb
+  padding: 1em
+
+.archive
+  .button
+    +ybutton
+    width: 5em
+
+.return
+  float: right
+  opacity: .3
+  &:hover
+    opacity: 1
+
+.big
+  font-size: 1.2em
+
+body.support #main > article
+  width: $navWidth
+  margin: 3em auto
+  font-size: 1.2em
+  form
+    margin: 1em
+
+#helloblock
+  color: $ycolor1
+  text-shadow: 0 -1px 0 rgba(#000,.9)
+  padding: 20px
+  +border-radius()
+  +box-shadow(rgba(#000,.6) 0 0 15px inset)
+  +linear-gradient(color-stops($ycolor4,$ycolor5))
+  #logo
+    float: left
+    margin-right: 40px
+  #blocktitle
+    font-size: 1.6em
+    font-weight: normal
+  #blocktext
+    margin: 32px 0
+  #getit
+    float: right
+
+iframe
+  +box-shadow(rgba(#000,.6) 0 0 15px)
+  +border-radius()
+
+$inputWidth: 28em
+
+input[type=text], textarea
+  display: block
+  width: $inputWidth
+  font-size: .9em
+  +box-shadow($ycolor3 0 0 3px inset, $ycolorb 0 0 3px)
+  +border-radius()
+  border: solid 1px $ycolor3
+  color: $ycolor4
+  background: $ycolorb
+  padding: 1ex
+  margin: 1em 0
+textarea
+  height: $inputWidth/1.618
+
+input[type=submit],.bluebutton
+  display: block
+  text-align: center
+  font-size: .9em
+  padding: 1ex 3ex
+  margin: .5em 0
+  +box-shadow($higlightcolor-reflect 0 1px 2px inset, $ycolorb 2px 0)
+  +border-radius()
+  text-shadow: 0 -1px $ycolor7
+  border: solid 3px $ycolor7
+  color: $ycolorb !important
+  font-weight: bold
+  background: $higlightcolor
+  &:hover
+    color: $ycolorb
+    text-shadow: 0 0 1px $higlightcolor-shadow
+    cursor: pointer
+    background: $higlightcolor + #111
