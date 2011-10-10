@@ -1,4 +1,4 @@
-<% language, languages, blog, article = setItemConf %><!doctype html>
+<!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
@@ -14,10 +14,10 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title><%= @item[:title] %></title>
+  <title>YPassword</title>
   <meta name="description" content="">
   <meta name="author" content="">
-  <%= meta_tags %>
+  
 
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
@@ -35,32 +35,94 @@
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="/js/libs/modernizr-1.7.min.js"></script>
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="<%= @config[:rss_uri][language.intern] %>"/>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/ypasswordespozitocomfr"/>
 
 </head>
 
-<body lang="<%= language %>" class="<%=bodyclass%>">
+<body lang="fr" class="clear">
     <div id="container">
         <header>
         <div class="inner">
             <div id="prelinks">
-                <div id="choixlang"><%= choixlang %></div>
-                <div id="choixrss"><%= choixrss %></div>
-                <nav id="mainnav"><%= generateMenu %><div class="flush"></div></nav>
+                <div id="choixlang"><a href="/Scratch/en/" onclick="setLanguage('en')">in English</a></div>
+                <div id="choixrss"><a id="rss" href="http://feeds.feedburner.com/ypasswordespozitocomfr">s'abonner</a></div>
+                <nav id="mainnav"><ul><li><span class="active" title="You're here.">YPassword</span></li></ul><div class="flush"></div></nav>
             </div>
             <hgroup id="maintitle">
-            <%= page_title %>
+            <h1>YPassword</h1><h2>
+    <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=436268354&mt=8">Get it! &raquo;</a>
+<h2>
             </hgroup>
         </div>
         </header>
         <div id="main" role="main">
             <article class="inner">
             <div class="content">
-                <%= yield %>
+                
+<div id="helloblock">
+    <div id="logo">
+        <img src="/img/main/Logo.png" /></div>
+    <div id="blocktitle">Easy, Secure &amp; Portable Password Manager</div>
+    <div id="blocktext">
+        <p> One different password for each website.  <br />
+            If some are compromised, there is not way to find another one.<br />
+            You only have to remember one password.</p></div>
+     <div id="getit">
+        <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=436268354&amp;mt=8"><img src="/img/main/GetIt.png" /></a></div>
+     <div class="flush"></div>
+</div>
+
+<div id="easy" class="slideshow">
+    <img src="/img/main/iPhone_Easy.png" alt="main view" class="rightimage" />
+    <h3>Easy</h3>
+    <p>Remember only one Master Password</p>
+    <ol>
+    <li>Tab "go to website"</li>
+    <li>Paste</li>
+    <li>Enjoy</li>
+    </ol>
+    <ol>
+    <li>Tap on login or password, it's copied</li>
+    <li>Go in any other app</li>
+    <li>Paste</li>
+    <li>Enjoy</li>
+    </ol>
+    <div class="flush"></div>
+</div>
+
+<div id="secure" class="slideshow">
+    <img src="/img/main/iPhone_pw.png" class="leftimage" alt="Main Password View" />
+    <h3>Secure</h3>
+    <p>Only strong password provided using SHA1</p>
+    <p>Knowing one of your password make it almost
+    impossible to know your master password or other 
+    passwords.</p>
+    <div class="flush"></div>
+</div>
+
+<div id="portable" class="slideshow">
+    <h3 style="width: 100%">Portable</h3>
+    <p>You can use YPassword on: </p>
+    <ul>
+        <li> iPhone, </li>
+        <li> Mac using Dashboard widget, </li>
+        <li> on UNIX system using the command line <code>openssl</code> </li>
+    </ul>
+    <div class="flush"></div>
+</div>
+
+<div class="flush"></div>
+
+<div class="center">
+<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=436268354&amp;mt=8">
+    <img src="/img/main/Available_appstore.png" alt="Get it!" />
+</a>
+</div>
+
             </div>
             <footer>
             <ul class="article_metadata">
-                <li><%= last_modified_tag %></li>
+                <li>modifié le : <time>10/10/2011</time></li>
             </ul>
             </footer>
             </article>
@@ -68,16 +130,16 @@
         <footer>
         <div class="inner">
             <div id="webpageinfo">
-                <%=tradOf(:copyright) %>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.fr">Droits de reproduction ©, Yann Esposito</a>
                 <div>
                     Designed by <a href="htt://yannesposito.com">Yann Esposito</a>
                 </div>
                 <div>
-                    <%= tradOf(:entirely_done_with) %>
+                    Site entièrement réalisé avec
                     <a href="http://www.vim.org">vim</a>,
                     <a href="http://nanoc.stoneship.org">nanoc</a>,
                     <a href="http://compass-style.org">compass</a>
-                    <%= tradOf(:and) %> 
+                    et 
                     <a href="http://html5boilerplate">html5boilerplate</a>
                 </div>
             </div>
@@ -91,7 +153,7 @@
         <!-- scripts concatenated and minified via ant build script-->
         <script src="/js/plugins.js"></script>
         <script src="/js/script.js"></script>
-        <%= @item[:content_for_js] %>
+        
         <!-- end scripts-->
         <!--[if lt IE 7 ]>
         <script src="/js/libs/dd_belatedpng.js"></script>
