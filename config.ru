@@ -70,7 +70,7 @@ class MyMain < Rack::TryStatic
                 "Last-Modified"  => File.mtime($mailFile).httpdate,
                 "Content-Type"   => "text/html",
                 "Content-Length" => File.size($mailFile).to_s
-            }, File.read($mailFile)]
+            }, [File.read($mailFile)]]
         else
             super
         end
