@@ -1,5 +1,5 @@
 -----
-title: Maison Martéguale
+title: Maison Martégale
 noSubMenu: true
 menupriority: 1
 tags:
@@ -23,9 +23,9 @@ end
 
 <% content_for :bodyclass do %>clear<% end %>
 <% content_for :intro do %>
-    <h1>Maison Martéguale</h1>
+    <h1>Maison Martégale</h1>
     <p>Ce site a été fait pour promouvoir la vente de cette maison
-    martéguale familiale.</p>
+    martégale familiale.</p>
 <% end %>
 
 <%= onelinediv %>
