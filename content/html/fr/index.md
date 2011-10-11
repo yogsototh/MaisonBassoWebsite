@@ -1,74 +1,76 @@
 -----
-title: YPassword
+title: Maison Martéguale
 noSubMenu: true
 menupriority: 1
+tags:
+  - Maison
+  - Vente
+  - Provence
+  - Vue
+  - Mer
 -----
 <% 
-def itunesurl
-    "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=436268354&mt=8" 
+def hline 
+    %{<div class="templatemo_h_line"></div>} 
+end
+def onelinediv 
+    %{<div class="templatemo_one_col">}
+end
+def enddiv
+    %{</div>}
 end
 %>
-<% content_for :title do %>
-    <a href="<%=itunesurl%>">Get it! &raquo;</a>
-<% end %>
+
 <% content_for :bodyclass do %>clear<% end %>
+<% content_for :intro do %>
+    <h1>Maison Martéguale</h1>
+    <p>Ce site a été fait pour promouvoir la vente de cette maison
+    martéguale familiale.</p>
+<% end %>
 
-<div id="helloblock">
-    <div id="logo">
-        <img src="/img/main/Logo.png"/></div>
-    <div id="blocktitle">Easy, Secure &amp; Portable Password Manager</div>
-    <div id="blocktext">
-        <p> One different password for each website.  <br/>
-            If some are compromised, there is not way to find another one.<br/>
-            You only have to remember one password.</p></div>
-     <div id="getit">
-        <a href="<%=itunesurl%>"><img src="/img/main/GetIt.png"/></a></div>
-     <div class="flush"></div>
-</div>
+<%= onelinediv %>
+<h2>Vente maison</h2>
 
-<div id="easy" class="slideshow">
-    <img src="/img/main/iPhone_Easy.png" alt="main view" class="rightimage" />
-    <h3>Easy</h3>
-    <p>Remember only one Master Password</p>
-    <ol>
-    <li>Tab "go to website"</li>
-    <li>Paste</li>
-    <li>Enjoy</li>
-    </ol>
-    <ol>
-    <li>Tap on login or password, it's copied</li>
-    <li>Go in any other app</li>
-    <li>Paste</li>
-    <li>Enjoy</li>
-    </ol>
-    <div class="flush"></div>
-</div>
+<p>Maison située à Martigues, quartier “Ferrière, La rode”, très proche du centre ville et des commerces de proximité.
+Vu magnifique sur l’étang de Berre, face au jardin public, pas de vis à vis.</p>
 
-<div id="secure" class="slideshow">
-    <img src="/img/main/iPhone_pw.png" class="clean" alt="Main Password View" class="leftimage" />
-    <h3>Secure</h3>
-    <p>Only strong password provided using SHA1</p>
-    <p>Knowing one of your password make it almost
-    impossible to know your master password or other 
-    passwords.</p>
-    <div class="flush"></div>
-</div>
+<ul>
+ <li>Terrain de <i>1006 m<sup>2</sup></i></li>
+ <li>Maison de plein pied, surface compensée d’environ <i>140 m<sup>2</sup></i></li>
+ </ul>
 
-<div id="portable" class="slideshow">
-    <h3 style="width: 100%">Portable</h3>
-    <p>You can use YPassword on: </p>
-    <ul>
-        <li> iPhone, </li>
-        <li> Mac using Dashboard widget, </li>
-        <li> on UNIX system using the command line <code>openssl</code> </li>
-    </ul>
-    <div class="flush"></div>
-</div>
+<%= enddiv %>
+<%= hline %>
 
-<div class="flush"></div>
+<%= onelinediv %>
 
-<div class="center">
-<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=436268354&mt=8">
-    <img src="/img/main/Available_appstore.png" alt="Get it!"/>
-</a>
-</div>
+<h2 id="details"> Descriptif </h2>
+
+<ul>
+
+     <li> 3 chambres (12 et 17 m<sup>2</sup>), 
+</li><li> une Salle à manger (33 m<sup>2</sup>) équipée d’une cheminée avec un insert, 
+</li><li> une grande salle de bain (8 m<sup>2</sup>), 
+</li><li> une cuisine intégrée (12 m<sup>2</sup>), 
+</li><li> un garage attenant à la maison qui sert de chaufferie et de buanderie (28 m<sup>2</sup>), 
+</li><li> une véranda (20 m<sup>2</sup>),
+</li><li> chauffage central au Gaz de ville, 
+</li><li> pompe à chaleur (climatisation réversible) dans la salle à manger et les 3 chambres.
+</li>
+
+</ul>
+
+<%= enddiv %>
+<%= hline %>
+
+<%= onelinediv %>
+## Annexes:
+
+Un garage double indépendant (35 m<sup>2</sup>), Une piscine 9m x 4,5m, un puits avec un bassin
+
+<%= enddiv %>
+<%= hline %>
+
+<%= onelinediv %>
+**Prix : 540.000€**
+<%= enddiv %>

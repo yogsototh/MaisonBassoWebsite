@@ -30,8 +30,8 @@ class MyMain < Rack::TryStatic
         if request.path == "/contact" and request.post?
             Pony.mail(  
               :from => request[:name] + '<' + request[:mail] +'>',
-              :to => "yann.esposito@gmail.com",
-              :subject => 'YPassword support',
+              :to => "jeanclaude.basso@gmail.com",
+              :subject => 'Vente maison (site)',
               :body => request[:body],
               :port => '587',
               :via => :smtp,
