@@ -66,7 +66,8 @@ h1 {
 	display: inline;
 }
 
-#templatemo_menu ul li a {
+#templatemo_menu ul li a,
+#templatemo_menu ul li span {
 	float: left;
 	padding: 16px 40px;	
 	text-align: center;
