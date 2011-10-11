@@ -64,13 +64,13 @@ Vu magnifique sur l’étang de Berre, face au jardin public, pas de vis à vis.
 <%= hline %>
 
 <%= onelinediv %>
-## Annexes:
+<h2>Annexes</h2>
 
-Un garage double indépendant (35 m<sup>2</sup>), Une piscine 9m x 4,5m, un puits avec un bassin
+<p>Un garage double indépendant (35 m<sup>2</sup>), Une piscine 9m x 4,5m, un puits avec un bassin</p>
 
 <%= enddiv %>
 <%= hline %>
 
 <%= onelinediv %>
-**Prix : 540.000€**
+<p style="font-size: 2em"><b>Prix : 540.000€</b></p>
 <%= enddiv %>
