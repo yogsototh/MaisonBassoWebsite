@@ -365,3 +365,15 @@ h1 {
 .cleaner img {
 	margin: 0 0 0 30px;
 }
+
+#choixlang {
+    float: right;
+    height: 0;
+}
+#choixlang a {
+    color: #FAFAFA;
+    font-size: 1.2em;
+    display: block;
+    margin: 1em;
+    float: left;
+}
