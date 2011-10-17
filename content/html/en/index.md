@@ -13,6 +13,9 @@ tags:
 def hline 
     %{<div class="templatemo_h_line"></div>} 
 end
+def  m2 
+    %{m<sup>2</sup>}
+end
 def onelinediv 
     %{<div class="templatemo_one_col">}
 end
@@ -32,11 +35,11 @@ end
 <h2>Vente maison</h2>
 
 <p>Maison située à Martigues, quartier “Ferrière, La rode”, très proche du centre ville et des commerces de proximité.
-Vu magnifique sur l’étang de Berre, face au jardin public, pas de vis à vis.</p>
+Vue magnifique sur l’étang de Berre, face au jardin public, pas de vis à vis.</p>
 
 <ul>
- <li>Terrain de <i>1006 m<sup>2</sup></i></li>
- <li>Maison de plein pied, surface compensée d’environ <i>140 m<sup>2</sup></i></li>
+ <li>Terrain de <i>1006 <%= m2 %></i></li>
+ <li>Maison de plein pied, surface habitable de <i>120 <%= m2 %></i></li>
  </ul>
 
 <%= enddiv %>
@@ -48,12 +51,12 @@ Vu magnifique sur l’étang de Berre, face au jardin public, pas de vis à vis.
 
 <ul>
 
-     <li> 3 chambres (12 et 17 m<sup>2</sup>), 
-</li><li> une Salle à manger (33 m<sup>2</sup>) équipée d’une cheminée avec un insert, 
-</li><li> une grande salle de bain (8 m<sup>2</sup>), 
-</li><li> une cuisine intégrée (12 m<sup>2</sup>), 
-</li><li> un garage attenant à la maison qui sert de chaufferie et de buanderie (28 m<sup>2</sup>), 
-</li><li> une véranda (20 m<sup>2</sup>),
+     <li> 3 chambres (12 et 17 <%= m2 %>), 
+</li><li> une Salle à manger (33 <%= m2 %>) équipée d’une cheminée avec un insert, 
+</li><li> une grande salle de bain (8 <%= m2 %>), 
+</li><li> une cuisine intégrée (12 <%= m2 %>).
+</li><li> Surface annexes: un garage attenant à la maison qui sert de chaufferie et de buanderie (28 <%= m2 %>), 
+</li><li> une véranda (20 <%= m2 %>),
 </li><li> chauffage central au Gaz de ville, 
 </li><li> pompe à chaleur (climatisation réversible) dans la salle à manger et les 3 chambres.
 </li>
@@ -66,7 +69,7 @@ Vu magnifique sur l’étang de Berre, face au jardin public, pas de vis à vis.
 <%= onelinediv %>
 <h2>Annexes</h2>
 
-<p>Un garage double indépendant (35 m<sup>2</sup>), Une piscine 9m x 4,5m, un puits avec un bassin</p>
+<p>Un garage double indépendant (35 <%= m2 %>), Une piscine 9m x 4,5m, un puits avec un bassin</p>
 
 <%= enddiv %>
 <%= hline %>

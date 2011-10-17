@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://ypassword.espozito.com/Scratch/fr/photos/</loc>
+    <lastmod>2011-10-17</lastmod>
+  </url>
+  <url>
+    <loc>http://ypassword.espozito.com/Scratch/en/photos/</loc>
+    <lastmod>2011-10-17</lastmod>
+  </url>
+  <url>
     <loc>http://ypassword.espozito.com/Scratch/en/blog/feed/feed.xml</loc>
     <lastmod>2011-10-11</lastmod>
   </url>
   <url>
     <loc>http://ypassword.espozito.com/Scratch/en/</loc>
-    <lastmod>2011-10-11</lastmod>
+    <lastmod>2011-10-17</lastmod>
   </url>
   <url>
     <loc>http://ypassword.espozito.com/Scratch/sitemap.xml</loc>
@@ -18,6 +26,6 @@
   </url>
   <url>
     <loc>http://ypassword.espozito.com/Scratch/fr/</loc>
-    <lastmod>2011-10-11</lastmod>
+    <lastmod>2011-10-17</lastmod>
   </url>
 </urlset>
