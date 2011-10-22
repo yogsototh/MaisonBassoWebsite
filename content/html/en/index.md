@@ -56,7 +56,7 @@ Beautiful view of the "Etang de Berre". The house face a public garden.</p>
 </li><li> a large bathroom (8 m², 85 sq²), 
 </li><li> a kitchen (12 m², 129 sq²).
 </li><li> A garage adjoining the house which serves as boiler room and laundry (27m², 290 sq²)
-</li><li> veranda (20 m², 215 sq²),
+</li><li> A veranda facing the "Étang de Berre" (20 m², 215 sq²),
 </li><li> Gas central heating, 
 </li><li> heat pump (air conditioning) in the dining room and three bedrooms.
 </li>

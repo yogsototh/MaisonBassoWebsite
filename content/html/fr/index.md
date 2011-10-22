@@ -56,7 +56,7 @@ Vue magnifique sur l’étang de Berre, face au jardin public, pas de vis à vis
 </li><li> une grande salle de bain (8 m²), 
 </li><li> une cuisine intégrée (12 m²).
 </li><li> Surface annexes: un garage attenant à la maison qui sert de chaufferie et de buanderie (28 m²), 
-</li><li> une véranda (20 m²),
+</li><li> une véranda face à l'Étang de Berre (20 m²),
 </li><li> chauffage central au Gaz de ville, 
 </li><li> pompe à chaleur (climatisation réversible) dans la salle à manger et les 3 chambres.
 </li>

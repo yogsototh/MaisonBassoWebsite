@@ -65,7 +65,7 @@ fr: </li><li> une Salle à manger (33 m²) équipée d’une cheminée avec un i
 fr: </li><li> une grande salle de bain (8 m²), 
 fr: </li><li> une cuisine intégrée (12 m²).
 fr: </li><li> Surface annexes: un garage attenant à la maison qui sert de chaufferie et de buanderie (28 m²), 
-fr: </li><li> une véranda (20 m²),
+fr: </li><li> une véranda face à l'Étang de Berre (20 m²),
 fr: </li><li> chauffage central au Gaz de ville, 
 fr: </li><li> pompe à chaleur (climatisation réversible) dans la salle à manger et les 3 chambres.
 fr: </li>
@@ -74,7 +74,7 @@ en: </li><li> a dinning room (33 m², 355 sq²) with a fireplace.
 en: </li><li> a large bathroom (8 m², 85 sq²), 
 en: </li><li> a kitchen (12 m², 129 sq²).
 en: </li><li> A garage adjoining the house which serves as boiler room and laundry (27m², 290 sq²)
-en: </li><li> veranda (20 m², 215 sq²),
+en: </li><li> A veranda facing the "Étang de Berre" (20 m², 215 sq²),
 en: </li><li> Gas central heating, 
 en: </li><li> heat pump (air conditioning) in the dining room and three bedrooms.
 en: </li>
